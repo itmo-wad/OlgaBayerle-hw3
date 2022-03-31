@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap.css') }}">
+</head>
+<body>
+    <div style="width: 600px; margin: auto;">
+        <h1>Blog</h1>
+        
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class=flashes>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+        {% endwith %}
+
+        <hr>
+        <form action="/blog" method="post" id="notebook">
+            <table>
+                <tr>
+                    <td>
+                        <label for="title">Title</label>
+                    </td>
+                    <td>
+                        <input type="text" name="title" id="title">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="note">Content</label>
+                    </td>
+                    <td>
+                        <textarea name="note" id="note" cols="30" rows="10" form="notebook"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Add">
+        </form>
+        <hr>
+
+       </table>
+
+       <a href="{{ url_for('default') }}">Home</a> <br></br>
+    </div>
+</body>
+</html>

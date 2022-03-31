@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap.css') }}">
+</head>
+<body>
+    <div style="width: 600px; margin: auto;">
+        <h1>Blog</h1>
+
+       <table style="border: 1px solid; border-collapse: collapse; width: 100%;">
+           {% for note in notes %}
+               <tr>
+                   <td style="border: 1px solid; text-align: center;">
+                        <h3>{{ note.title }}</h3>
+                   </td>
+                   <td style="border: 1px solid; text-align: center;">
+                       <p>{{ note.content }}</p> 
+                   </td>
+               </tr>
+           {% endfor %}
+
+       </table>
+
+       <a href="{{ url_for('default') }}">Home</a> <br></br>
+    </div>
+</body>
+</html>

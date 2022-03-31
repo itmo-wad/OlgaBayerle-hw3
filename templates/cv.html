@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Olya - CV Resume">
+    <title>Olya's CV</title>
+
+     <!-- Add icon library -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Stylesheets -->
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap.css') }}">
+
+  </head>
+  <body>
+
+	
+	<!-- Header section start -->
+	<header class="header-section">
+	<h1>Olga Bayerle <a href="https://github.com/OlyaBay96"><i class="fa fa-github"></i><a href="https://de.linkedin.com/in/olga-bayerle"><i class="fa fa-linkedin"></i></a></h1>
+	</header>
+	<!-- Header section end -->
+
+	<!-- Main section start -->
+	<section class="main-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-10 offset-xl-1">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="main-text">
+								<p>&#128187 I’m a Computer Science M. Sc. Student @ TU Darmstadt in Germany</p>
+                                <p>&#128205 I'm currently on a semester abroad @ ITMO University in Russia</p>
+							</div>
+							<div class="main-info">
+								<h2>General Info</h2>
+								<ul>
+									<li><span>Date of Birth</span>January 21, 1996</li>
+									<li><span>Address</span>Germany/St. Petersburg</li>
+									<li><span>E-mail</span>olga.bayerle@googlemail.com</li>
+									<li><span>Phone </span>+7 (965) 753-68-44</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<figure class="main-image">
+								<img src="{{url_for('static', filename='profilepicture.jpeg')}}" />
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Main section end -->
+
+	<!-- Resume section start -->
+	<section class="resume-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-7 offset-xl-2">
+					<div class="section-title">
+						<h2>Work Experience</h2>
+					</div>
+					<ul class="resume-list">
+						<li>
+							<h2>2021-Present</h2>
+							<h3>Gentlemen Group GmbH, Germany</h3>
+							<h4>IT Consultant</h4>
+                            <p>• Consulting (technical & functional) for customers & partners</p>
+                            <p>• Conception in the context of software solutions</p>
+                            <p>• Requirements Management</p>
+                            <p>• Configuration & implementation of requirements (interface integration & ITSM platforms)</p>
+                            <p>• Implementation of interfaces, special reportings & statistics</p>
+                            <p>• Quality assurance & testing</p>
+                            <p>• Realization of trainings & workshops</p>
+							
+						</li>
+						<li>
+							<h2>2020-2021</h2>
+							<h3>ITSM Group GmbH, Germany</h3>
+							<h4>Junior IT Consultant - Excellent Reference</h4>
+							<p> • Consulting (technical & functional) for customers</p>
+                            <p> • Recording & configuration of requirements (interface integration & ITSM platforms) </p>
+                            <p> • Implementation of interfaces, special reportings & statistics </p>
+                            <p> • Quality assurance & testing</p>
+                            <p> • Administrative tasks (documentation, presentation & coordination) </p>
+						</li>
+                        <li>
+							<h2>2016-2020</h2>
+							<h3>Technical University of Darmstadt, Germany</h3>
+							<h4>Working student as mentor & tutor</h4>
+							<p> • Work as mentor: Individual supervision of first-year students for a successful start into their studies for three consecutive years</p></br>
+                            <p> • Work as tutor: Supervision of exercise groups ( ~30 participants) for the courses „Operating Systems“, „Digital Design“ & „Computer Organisation“</p>
+						</li>
+                        <li>
+							<h2>2017-2018</h2>
+							<h3>IBM, Germany</h3>
+							<h4>Internship - Grade: Excellent</h4>
+							<p>The internship included independent & agile work within a student project
+                                team. This involved not only creative solution finding via design thinking
+                                workshops but also the development of cloud based microservices for the
+                                insurance & healthcare sector. </br> </br>
+
+                                The project goal was to extend the IBM product of the electronic health
+                                record (eGA) in such a way that external ecosystems can authenticate
+                                themselves to the eGA & transfer documents. </p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Resume section end -->
+
+	<!-- Resume section start -->
+	<section class="resume-section with-bg spad">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-7 offset-xl-2">
+					<div class="section-title">
+						<h2>Education</h2>
+					</div>
+					<ul class="resume-list">
+						<li>
+							<h2>2021-Present</h2>
+							<h3>Computer Science M. Sc.</h3>
+							<h4>Technical University of Darmstadt</h4>
+							<p>Minor Subject: Entrepreneurship & Innovation</p>
+						</li>
+                        <li>
+							<h2>2022</h2>
+							<h3>Exchange Semester</h3>
+							<h4>ITMO University, St. Petersburg</h4>
+						</li>
+						<li>
+							<h2>2020</h2>
+							<h3>ITIL Foundation Certificate in IT Servicemanagement</h3>
+							<h4>Certificate number: GR671160988OB</h4>
+						</li>
+                        <li>
+							<h2>2015-2021</h2>
+							<h3>Computer Science B. Sc.</h3>
+							<h4>Technical University of Darmstadt</h4>
+						</li>
+    
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Resume section end -->
+
+    <footer class="footer-section">
+		<div class="container text-center">
+			<div class="copyright"> All rights reserved, made by me  |  </a>  <a href="{{ url_for('default') }}"> Back Home</a> <br></br></div>
+		</div>
+	</footer>
+	<!-- Footer section end -->
+
+  </body>
+</html>

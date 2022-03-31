@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Failed</title>
+
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap.css') }}">
+</head>
+<body>
+    <h1>Login Failed!</h1>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      {% for category, message in messages %}
+        <div class="alert alert-{{ category }}" role="alert">
+          <!-- Escaping HTML is the default behavior, so pass it through the SAFE filter to display the HTML unescaped -->
+          {{ message | safe}}
+        </div>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+</body>
+</html>

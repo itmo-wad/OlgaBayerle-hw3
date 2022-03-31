@@ -1,0 +1,257 @@
+/* =================================
+------------------------------------
+  Version: 1.0
+ ------------------------------------ 
+ ====================================*/
+
+html,
+body {
+	height: 4000px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #40424a;
+	margin: 0;
+	font-weight: 600;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+h2 {
+	font-size: 48px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+p {
+	font-size: 18px;
+	color: #808181;
+	line-height: 1.8;
+}
+
+img {
+	max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+
+
+/*---------------------
+	Header section
+-----------------------*/
+.header-section {
+	padding: 30px 40px;
+	top: 0;
+	background-color:hsla(0,0%,0%,0.95);
+	position:sticky;
+	z-index:10;
+
+}
+
+.header-section h1{
+	font-size: 65px;
+	font-family: "Impact", "Courier New", monospace;
+	line-height: normal;
+	margin-bottom: 20px;
+	margin-left: 30px;
+	color:floralwhite
+}
+
+
+.header-section .fa-linkedin {
+	background: #007bb5;
+	color: white;
+	float: right;
+}
+
+.header-section .fa-github {
+	background: black;
+	color: white;
+	float: right;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 70px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+  }
+  
+/*---------------------
+	Main section
+-----------------------*/
+.main-section {
+	background-color:rgba(0, 0, 0, 0.9);
+	margin-block-start: 0px;
+}
+
+.main-text {
+	margin-bottom: 80px;
+}
+
+.main-text h2 {
+	font-size: 170px;
+	line-height: normal;
+	margin-bottom: 20px;
+}
+
+.main-text p {
+	margin-top: 70px;
+	font-size: 30px;
+	line-height: 1.3;
+}
+
+.main-image {
+	padding-top: 70px;
+	margin-bottom: 50px;
+}
+
+.main-info h2 {
+	margin-bottom: 30px;
+	color: lightgrey
+}
+
+.main-info ul {
+	list-style: none;
+}
+
+.main-info ul li {
+	font-size: 24px;
+	color: #929494;
+	margin-bottom: 15px;
+}
+
+.main-info ul li span {
+	color: #686c7c;
+	display: inline-block;
+	min-width: 220px;
+}
+
+.main-info ul li:last-child {
+	margin-bottom: 0;
+}
+
+/*---------------------
+	Resume section
+----------------------*/
+.resume-section {
+	background-color:rgba(0, 0, 0, 0.9);
+	background-image: url(../WorkBack.png)
+}
+
+
+.resume-section.with-bg {
+	background-color:rgba(0, 0, 0, 0.9);
+}
+
+.section-title h2{
+	font-size: 60px;
+	margin-bottom: 10px;
+	letter-spacing: 0.1em;
+   word-spacing: 0.5em;
+   margin-bottom: 35px;
+   margin-top: 15px;
+   color: rgb(230, 228, 228);
+}
+
+.resume-list {
+	list-style: none;
+	margin-left: 60px;
+	padding-left: 110px;
+	border-left: 2px solid #929494;
+}
+
+.resume-list li {
+	margin-bottom: 120px;
+	position: relative;
+}
+
+.resume-list li:last-child {
+	margin-bottom: 0;
+}
+
+.resume-list li:after {
+	position: absolute;
+	content: '';
+	width: 15px;
+	height: 15px;
+	border: 2px solid lightgrey;
+	border-radius: 50px;
+	background: #cacaca;
+	top: 30px;
+	left: -118px;
+}
+
+.resume-list h2 {
+	font-size: 50px;
+	margin-bottom: 10px;
+	color: lightgrey;
+}
+
+.resume-list h3{
+	color: lightgrey;
+}
+.resume-list h4 {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: lightgrey;
+	margin-top: 10px;
+	margin-bottom: 45px;
+}
+
+.resume-list p {
+	margin-bottom: 0;
+	color: lightgrey;
+}
+
+/*---------------------
+	Footer section
+-----------------------*/
+.footer-section {
+	background-color:hsla(0,0%,0%,0.95);
+	padding: 20px 0;
+}
+
+.copyright {
+	padding-top: 5px;
+	font-size: 12px;
+	color: #838488;
+	line-height: normal;
+}
