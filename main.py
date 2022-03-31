@@ -169,4 +169,7 @@ def clear_note():
 
 #1.Runs at ‘http://localhost:5000’
 if __name__ == '__main__':
+    if 'userlogedin' in session:
+        session.pop('userlogedin', None)
+            
     app.run(host='localhost', port=5000, debug=True)
